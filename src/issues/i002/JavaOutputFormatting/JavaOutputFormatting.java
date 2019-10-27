@@ -1,4 +1,4 @@
-package ionut.i002.JavaOutputFormatting;
+package issues.i002.JavaOutputFormatting;
 
 import java.util.Scanner;
 

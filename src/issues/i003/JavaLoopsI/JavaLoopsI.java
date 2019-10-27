@@ -1,4 +1,4 @@
-package ionut.i003.JavaLoopsI;
+package issues.i003.JavaLoopsI;
 
 import java.util.Scanner;
 

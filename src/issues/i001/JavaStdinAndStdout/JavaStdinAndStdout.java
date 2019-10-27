@@ -1,4 +1,4 @@
-package ionut.i001.JavaStdinAndStdout;
+package issues.i001.JavaStdinAndStdout;
 
 import java.util.Scanner;
 
