@@ -1,4 +1,4 @@
-package issues.i008.JavaDatatypes;
+package issues.i008.JavaDataTypes;
 
 import java.util.Scanner;
 
@@ -32,3 +32,7 @@ public class JavaDataTypes {
         }
     }
 }
+
+/*
+https://www.hackerrank.com/challenges/java-datatypes/problem
+ */

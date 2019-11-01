@@ -17,3 +17,7 @@ public class JavaEndOfFile {
     }
 
 }
+
+/*
+https://www.hackerrank.com/challenges/java-end-of-file/problem
+ */
