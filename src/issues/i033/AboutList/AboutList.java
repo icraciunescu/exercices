@@ -29,7 +29,6 @@ public class AboutList {
         cars.addLast( new Car( "bmw", "520", 35000 ) );
 
         printAll( cars );
-
     }
 
     public static void printAll(@NotNull List list) {
@@ -37,4 +36,5 @@ public class AboutList {
             System.out.println(myVar);
         }
     }
+
 }
