@@ -8,6 +8,7 @@ import java.io.IOException;
 public class MyFileWriter {
 
     public void myWriter(File file) {
+
         String var = "test";
         try (BufferedWriter bufferedWriter = new BufferedWriter( new FileWriter( file ) )) {
             bufferedWriter.write( var );

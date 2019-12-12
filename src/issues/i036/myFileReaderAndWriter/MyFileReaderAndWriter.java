@@ -17,10 +17,6 @@ public class MyFileReaderAndWriter {
 
         myFileReader.myReader( secondFile );
 
-
-
-
-
     }
 
 }
