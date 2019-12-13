@@ -4,14 +4,16 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class MyFileWriter {
 
     public void myWriter(File file) {
 
-        String var = "test";
+        ArrayList<String> lines = MyFileReader.myReaderLines;
+
         try (BufferedWriter bufferedWriter = new BufferedWriter( new FileWriter( file ) )) {
-            bufferedWriter.write( var );
+            bufferedWriter.write( String.valueOf( lines ) );
         } catch (IOException e) {
             e.printStackTrace();
         }
