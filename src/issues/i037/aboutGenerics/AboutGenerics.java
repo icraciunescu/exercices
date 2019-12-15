@@ -10,6 +10,9 @@ public class AboutGenerics {
         Wildcards.accessOthers();
 
         MyUtils<Integer, String> myUtils = new MyUtils<>(25,"test");
+        MyUtils<Integer,Integer> myUtils1 = new MyUtils<>( 10, 15 );
+        System.out.println(myUtils);
+        System.out.println(myUtils1);
 
         Set<String> set = new HashSet<>();
         set.add( "aaa" );
