@@ -4,13 +4,13 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.List;
 
 public class MyFileWriter {
 
-    public void myWriter(File file) {
+    public void myWriter(File file, List<List<Integer>> list) {
 
-        ArrayList<String> lines = MyFileReader.myReaderLines;
+        List<List<Integer>> lines = list;
 
         try (BufferedWriter bufferedWriter = new BufferedWriter( new FileWriter( file ) )) {
             bufferedWriter.write( String.valueOf( lines ) );
