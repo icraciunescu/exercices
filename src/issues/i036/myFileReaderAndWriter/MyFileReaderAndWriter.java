@@ -17,26 +17,22 @@ public class MyFileReaderAndWriter {
         ArrayList<String> lines = MyFileReader.myReaderLines;
         System.out.println("my line/lines: " + lines);
         System.out.println("my row/rows: " + myInt);
+        System.out.println();
 
         ProcessingFile processingFile = new ProcessingFile();
         List<List<Integer>> var = processingFile.myProcessingFile(6);
-        System.out.println(var);
 
         ProcessingList processingList = new ProcessingList();
         List<List<Integer>> newVar = processingList.myProcessingList( var, 5 );
-        System.out.println(newVar);
 
         ProcessingList processingList1 = new ProcessingList();
         List<List<Integer>> newVar1 = processingList1.myProcessingList( newVar, 4 );
-        System.out.println(newVar1);
 
         ProcessingList processingList2 = new ProcessingList();
         List<List<Integer>> newVar2 = processingList2.myProcessingList( newVar1, 3 );
-        System.out.println(newVar2);
 
         ProcessingList processingList3 = new ProcessingList();
         List<List<Integer>> newVar3 = processingList3.myProcessingList( newVar2, 2 );
-        System.out.println(newVar3);
 
         MyFileWriter myFileWriter = new MyFileWriter();
         myFileWriter.myWriter( secondFile, newVar3 );

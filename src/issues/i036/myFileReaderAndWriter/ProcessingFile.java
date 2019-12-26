@@ -24,6 +24,9 @@ public class ProcessingFile {
                 }
                 numberInVar1 = numberInVar.subList( 0, numberInVar.size()-a );
                 numberInVar2 = numberInVar.subList( a, numberInVar.size() );
+                System.out.println(numberInVar1);
+                System.out.println(numberInVar2);
+                System.out.println();
             }
             myVar.add( numberInVar1 );
             myVar.add( numberInVar2 );

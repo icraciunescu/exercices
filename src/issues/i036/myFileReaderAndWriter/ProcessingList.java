@@ -21,6 +21,9 @@ public class ProcessingList {
             numberInVar2 = numberInThisPosition.subList( b, numberInThisPosition.size() );
             numberInVar.add( numberInVar1 );
             numberInVar.add( numberInVar2 );
+            System.out.println(numberInVar1);
+            System.out.println(numberInVar2);
+            System.out.println();
         }
         return numberInVar;
     }
