@@ -1,29 +1,19 @@
 package issues.i055.javaDateAndTime;
 
-import java.io.*;
+import java.time.LocalDate;
+import java.util.Scanner;
 
 public class JavaDateAndTime {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+        Scanner scanner = new Scanner( System.in );
+        int month = scanner.nextInt();
+        int day = scanner.nextInt();
+        int year = scanner.nextInt();
+        scanner.close();
 
-        String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
-
-        int month = Integer.parseInt(firstMultipleInput[0]);
-
-        int day = Integer.parseInt(firstMultipleInput[1]);
-
-        int year = Integer.parseInt(firstMultipleInput[2]);
-
-        String res = Result.findDay(month, day, year);
-
-        bufferedWriter.write(res);
-        bufferedWriter.newLine();
-
-        bufferedReader.close();
-        bufferedWriter.close();
+        System.out.println(Result.findDay( month, day, year ));
 
     }
 
@@ -42,9 +32,9 @@ class Result {
      */
 
     public static String findDay(int month, int day, int year) {
-        String dayForDate = null;
+        String result = LocalDate.of(year, month, day).getDayOfWeek().name();
+        return result;
 
-        return dayForDate;
     }
 
 }
