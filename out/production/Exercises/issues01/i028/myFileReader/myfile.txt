@@ -1,5 +1,0 @@
-put some random
-information
-in this file
-end
-line
